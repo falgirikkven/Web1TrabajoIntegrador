@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <title>Proyecto Integrador - Formulario</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link href="styles.css" rel="stylesheet" type="text/css" />
+        <!-- FA STYLESHEET -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <!-- JS CODE -->
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a class="navbar-title" href="#">
+                    <h1 class="title">Proyecto Integrador</h1>
+                </a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a
+                            class="nav-link"
+                            aria-current="page"
+                            href="./index.html"
+                            >Principal
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./carousel.html">Carousel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-active" href="#">Form</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main role="main">
+            <div class="starter-template">
+                <div class="main-container">
+                    <h2 class="subtitle">Formulario</h2>
+                    <p class="lead">
+                        Vestibulum ante ipsum primis in faucibus orci luctus et
+                        ultrices posuere cubilia curae; In nisl ligula, accumsan
+                        in sem eu, viverra sollicitudin libero. In purus eros,
+                        feugiat ac dui sit amet, porta molestie purus.
+                        Pellentesque consequat ipsum vitae nisl porttitor
+                        tempus. Sed quis maximus neque.
+                    </p>
+                </div>
+            </div>
+            <div class="main-container">
+                <form class="frm" id="frm">
+                    <div class="frm-item">
+                        <label class="frm-label" for="frm-name">Nombre</label>
+                        <input
+                            class="frm-input-text"
+                            id="frm-name"
+                            name="frm-name"
+                            type="text"
+                            maxlength="64"
+                            required
+                        />
+                        <div class="frm-invalid-feedback hide">
+                            Por favor ingrese un nombre válido
+                        </div>
+                    </div>
+
+                    <div class="frm-item">
+                        <label class="frm-label" for="frm-email">Email</label>
+                        <input
+                            class="frm-input-text"
+                            id="frm-email"
+                            name="frm-email"
+                            type="email"
+                            maxlength="64"
+                            required
+                        />
+                        <div class="frm-invalid-feedback hide">
+                            Por favor ingrese una dirección de email válida
+                        </div>
+                    </div>
+
+                    <div class="frm-item">
+                        <label class="frm-label" for="frm-age">Edad</label>
+                        <input
+                            class="frm-input-text"
+                            id="frm-age"
+                            name="frm-age"
+                            type="number"
+                            min="1"
+                            max="99"
+                            required
+                        />
+                        <div class="frm-invalid-feedback hide">
+                            Por favor ingrese una edad válida
+                        </div>
+                    </div>
+
+                    <div class="frm-item">
+                        <label class="frm-label" for="frm-dropdown"
+                            >Escoja una opción</label
+                        >
+                        <select class="frm-select" id="frm-dropdown">
+                            <option disabled selected value="0">
+                                Seleccione una opción
+                            </option>
+                            <option value="1">Opción 1</option>
+                            <option value="2">Opción 2</option>
+                            <option value="3">Opción 3</option>
+                        </select>
+                        <div class="frm-invalid-feedback hide">
+                            Por favor ingrese una opción válida
+                        </div>
+                    </div>
+
+                    <hr />
+                    <h4 class="frm-subsection-h">
+                        Elección única <span class="text-pale">(Opcional)</span>
+                    </h4>
+                    <div class="frm-item">
+                        <div class="frm-input-radio">
+                            <input
+                                id="frm-choice1"
+                                name="frm-choice"
+                                type="radio"
+                                value="choice1"
+                            />
+                            <label class="frm-label" for="frm-choice1"
+                                >Elección 1</label
+                            >
+                        </div>
+                        <div class="frm-input-radio">
+                            <input
+                                id="frm-choice2"
+                                name="frm-choice"
+                                type="radio"
+                                value="choice2"
+                            />
+                            <label class="frm-label" for="frm-choice2"
+                                >Elección 2</label
+                            >
+                        </div>
+                        <div class="frm-input-radio">
+                            <input
+                                id="frm-choice3"
+                                name="frm-choice"
+                                type="radio"
+                                value="choice3"
+                            />
+                            <label class="frm-label" for="frm-choice3"
+                                >Elección 3</label
+                            >
+                        </div>
+                    </div>
+
+                    <hr />
+                    <h4 class="frm-subsection-h">
+                        Elección múltiple
+                        <span class="text-pale">(Opcional)</span>
+                    </h4>
+                    <div class="frm-item">
+                        <div>
+                            <input
+                                id="frm-check1"
+                                name="frm-checkin"
+                                type="checkbox"
+                                value="check1"
+                            />
+                            <label class="frm-label" for="frm-check1"
+                                >Check 1</label
+                            >
+                        </div>
+                        <div>
+                            <input
+                                id="frm-check2"
+                                name="frm-checkin"
+                                type="checkbox"
+                                value="check2"
+                            />
+                            <label class="frm-label" for="frm-check2"
+                                >Check 2</label
+                            >
+                        </div>
+                        <div>
+                            <input
+                                id="frm-check3"
+                                name="frm-checkin"
+                                type="checkbox"
+                                value="check3"
+                            />
+                            <label class="frm-label" for="frm-check3"
+                                >Check 3</label
+                            >
+                        </div>
+                    </div>
+
+                    <hr />
+                    <button class="btn-submit" id="frm-btn" type="button">
+                        Enviar
+                    </button>
+                </form>
+
+                <div class="form-result hide"></div>
+            </div>
+        </main>
+        <footer class="main-container">
+            <hr />
+            <p>Leonel Nievas © Company 2023</p>
+        </footer>
+        <script src="form.js"></script>
+    </body>
+</html>
