@@ -1,6 +1,6 @@
-#Enunciado
+## Enunciado
 
-##Pautas para el Sitio Web
+## Pautas para el Sitio Web
 
 - Al menos 3 páginas distintas.
   - Principal
